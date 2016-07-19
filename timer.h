@@ -26,5 +26,5 @@ void timer0pwmInit();
 void timer0stop();
 void timer0start();
 void timer0intDisable();
-void timer0intEnable();
+void timer0intOVFEnable();
 void timer0clear();

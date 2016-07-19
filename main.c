@@ -60,15 +60,8 @@ ISR(TIMER0_OVF_vect){
 }
 
 int main(){
-    DDRB = 1<<PB4|1<<PB3;   //leds pwm are outputs
-
-    timer0pwmInit();
-    timer0clear();
-    timer0intEnable();
-    timer0start();
-
     sei();
-
+    timer0pwmInit();
     while(1);
     return 0;
 }
